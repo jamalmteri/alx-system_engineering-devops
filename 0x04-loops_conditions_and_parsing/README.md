@@ -1,1 +1,1 @@
-fixed loops and conditions
+loops and condition
