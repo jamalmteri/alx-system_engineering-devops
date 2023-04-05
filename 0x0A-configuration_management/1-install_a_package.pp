@@ -1,14 +1,6 @@
-# Install Puppet-Lint package
-class { 'puppet_lint':
-  ensure => present,
-}
-# Define package resource type
-define mypackage (
-  $ensure   = 'installed',
-  $provider = 'yum',
-) {
-  package { $name:
-    ensure   => $ensure,
-    provider => $provider,
-  }
+#!/usr/bin/pup
+# Install an especific version of flask (2.1.0)
+package {'flask':
+  ensure   => '2.1.0',
+  provider => 'pip3'
 }
