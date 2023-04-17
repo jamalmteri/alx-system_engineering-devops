@@ -1,1 +1,2 @@
-sudo ufw enable
+sudo apt-get update
+sudo apt-get install ufw
